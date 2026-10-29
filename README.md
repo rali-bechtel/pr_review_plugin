@@ -9,6 +9,15 @@ This repo is itself a Claude Code **plugin** (`.claude-plugin/plugin.json` + a l
 /plugin install pr-review@pr-review-tools
 ```
 
+## Setup
+
+Prerequisites: [Claude Code](https://claude.com/claude-code) CLI, and [GitHub CLI](https://cli.github.com/) (`gh`) installed and authenticated (`gh auth login`).
+
+1. Install the plugin as shown above.
+2. (Optional) `/plugin configure pr-review@pr-review-tools` to set a personal default coding-standards folder.
+3. Run `/pr-review-setup` once per project — it checks `gh auth status`, asks for a repo (existing local clone or one to clone for you) and a coding-standards path, and writes `repo.config.json`.
+4. Run `/pr-review` to start reviewing PRs.
+
 ## What's in this repo
 
 - `.claude-plugin/plugin.json`, `.claude-plugin/marketplace.json` — the plugin manifest and a local marketplace entry so it can be installed as above.

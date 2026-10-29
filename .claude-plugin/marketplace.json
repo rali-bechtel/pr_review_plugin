@@ -1,0 +1,14 @@
+{
+  "name": "pr-review-tools",
+  "description": "Local marketplace for the pr-review plugin.",
+  "owner": {
+    "name": "rali1",
+    "email": "rali1@bechtel.com"
+  },
+  "plugins": [
+    {
+      "name": "pr-review",
+      "source": "."
+    }
+  ]
+}

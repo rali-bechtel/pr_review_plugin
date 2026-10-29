@@ -1,0 +1,18 @@
+{
+  "name": "pr-review",
+  "version": "0.1.0",
+  "description": "Automated GitHub PR review: a setup step configures the target repo and coding standards, then /pr-review lists open PRs, delegates diff analysis to a reviewer agent, and lets you choose what to post as comments.",
+  "author": {
+    "name": "rali1",
+    "email": "rali1@bechtel.com"
+  },
+  "keywords": ["pull-request", "code-review", "github", "gh"],
+  "userConfig": {
+    "coding_standards_dir": {
+      "type": "directory",
+      "title": "Default coding standards folder",
+      "description": "Your personal default coding-standards file/folder, used by /pr-review-setup when a project doesn't have its own. Change later with /plugin configure.",
+      "required": false
+    }
+  }
+}
